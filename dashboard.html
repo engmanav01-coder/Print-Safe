@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <script src="dashboard.js"></script>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | PrivacyPrint</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar dashboard-nav">
+
+    <div class="logo">
+        Privacy<span>Print</span>
+    </div>
+
+
+    <div class="user-area">
+
+        <span id="welcomeUser">
+            Hello, Student
+        </span>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </div>
+
+</nav>
+
+
+
+<main class="dashboard">
+
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <div class="badge">
+                STUDENT DASHBOARD
+            </div>
+
+            <h1>
+                Send your document for printing.
+            </h1>
+
+            <p>
+                Upload a PDF and get a temporary print code.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- UPLOAD -->
+
+    <section class="upload-card">
+
+
+        <div class="upload-header">
+
+            <h2>
+                Upload Document
+            </h2>
+
+            <span>
+                PDF • Max 10 MB
+            </span>
+
+        </div>
+
+
+        <label
+            for="pdfInput"
+            class="drop-zone"
+            id="dropZone"
+        >
+
+            <div class="upload-icon">
+                ↑
+            </div>
+
+            <h3>
+                Click to choose your PDF
+            </h3>
+
+            <p>
+                or drag and drop your file here
+            </p>
+
+            <span id="selectedFile">
+                No file selected
+            </span>
+
+            <input
+                type="file"
+                id="pdfInput"
+                accept=".pdf,application/pdf"
+            >
+
+        </label>
+
+
+        <button
+            class="primary-btn"
+            id="uploadBtn"
+        >
+            Upload Document →
+        </button>
+
+
+        <p id="uploadMessage"
+           class="form-message">
+        </p>
+
+    </section>
+
+
+
+    <!-- ACTIVE JOB -->
+
+    <section
+        class="active-job hidden"
+        id="activeJob"
+    >
+
+        <div class="job-header">
+
+            <div>
+
+                <span class="small-label">
+                    YOUR PRINT CODE
+                </span>
+
+                <h2 id="jobCode">
+                    PRT-8291A2
+                </h2>
+
+            </div>
+
+
+            <span class="status-badge">
+                READY
+            </span>
+
+        </div>
+
+
+        <div class="job-content">
+
+
+            <div class="job-file">
+
+                <div class="big-file-icon">
+                    📄
+                </div>
+
+                <div>
+
+                    <strong id="jobFileName">
+                        assignment.pdf
+                    </strong>
+
+                    <p>
+                        PDF Document
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="countdown">
+
+                <span>
+                    Automatically deleted in
+                </span>
+
+                <strong id="countdown">
+                    30:00
+                </strong>
+
+            </div>
+
+
+            <div class="qr-container">
+
+                <div class="qr-placeholder">
+
+                    <div>
+                        QR
+                    </div>
+
+                </div>
+
+                <p>
+                    Show this QR or print code
+                    to the operator.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- HISTORY -->
+
+    <section class="history">
+
+        <div class="section-title">
+
+            <h2>
+                Recent Print Jobs
+            </h2>
+
+        </div>
+
+
+        <div class="history-list">
+
+
+            <div class="history-item">
+
+                <div class="history-file">
+
+                    <div class="mini-file">
+                        📄
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            DBMS_Assignment.pdf
+                        </strong>
+
+                        <small>
+                            Yesterday
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <span class="printed-status">
+                    PRINTED
+                </span>
+
+            </div>
+
+
+            <div class="history-item">
+
+                <div class="history-file">
+
+                    <div class="mini-file">
+                        📄
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Maths_Notes.pdf
+                        </strong>
+
+                        <small>
+                            2 days ago
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <span class="expired-status">
+                    EXPIRED
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

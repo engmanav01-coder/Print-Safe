@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <script src="operator.js"></script>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Operator | PrivacyPrint</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<nav class="navbar">
+
+    <div class="logo">
+        Privacy<span>Print</span>
+    </div>
+
+
+    <div class="operator-label">
+        🖨 Printer Operator
+    </div>
+
+</nav>
+
+
+
+<main class="operator-page">
+
+
+    <div class="badge">
+        PRINTER OPERATOR
+    </div>
+
+
+    <h1>
+        Find a print job.
+    </h1>
+
+    <p>
+        Enter the temporary print code provided by the student.
+    </p>
+
+
+    <form
+        class="search-form"
+        id="searchForm"
+    >
+
+        <input
+            type="text"
+            id="jobId"
+            placeholder="PRT-8291A2"
+            required
+        >
+
+        <button
+            class="primary-btn"
+            type="submit"
+        >
+            Search
+        </button>
+
+    </form>
+
+
+    <p id="operatorMessage"
+       class="form-message">
+    </p>
+
+
+
+    <!-- RESULT -->
+
+    <section
+        class="operator-result hidden"
+        id="operatorResult"
+    >
+
+
+        <div class="job-header">
+
+            <div>
+
+                <span class="small-label">
+                    PRINT JOB
+                </span>
+
+                <h2 id="resultJobId">
+                    PRT-8291A2
+                </h2>
+
+            </div>
+
+            <span class="status-badge">
+                READY
+            </span>
+
+        </div>
+
+
+        <div class="operator-info">
+
+
+            <div class="info-row">
+
+                <span>
+                    Student
+                </span>
+
+                <strong id="studentName">
+                    Manav
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <span>
+                    Document
+                </span>
+
+                <strong id="operatorFile">
+                    assignment.pdf
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <span>
+                    Pages
+                </span>
+
+                <strong>
+                    5
+                </strong>
+
+            </div>
+
+
+            <div class="info-row">
+
+                <span>
+                    Expires
+                </span>
+
+                <strong id="operatorExpiry">
+                    29:42
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="operator-actions">
+
+            <button
+                class="secondary-btn"
+                id="printingBtn"
+            >
+                Mark Printing
+            </button>
+
+
+            <button
+                class="primary-btn"
+                id="printBtn"
+            >
+                🖨 Print Document
+            </button>
+
+
+            <button
+                class="success-btn"
+                id="printedBtn"
+            >
+                ✓ Mark Printed
+            </button>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<script src="js/operator.js"></script>
+
+</body>
+</html>
